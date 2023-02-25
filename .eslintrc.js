@@ -1,7 +1,10 @@
 module.exports = {
   configs: {
     recommended: {
-      env: ['node'],
+      env: {
+        browser: true,
+        node: true,
+      },
       plugins: ['sonarjs'],
       extends: ['eslint:recommended', 'plugin:sonarjs/recommended', 'prettier'],
       rules: {
@@ -35,7 +38,10 @@ module.exports = {
       },
     },
     typescript: {
-      env: ['node'],
+      env: {
+        browser: true,
+        node: true,
+      },
       parserOptions: { project: './tsconfig.*?.json' },
       extends: [
         'plugin:@typescript-eslint/eslint-recommended',
