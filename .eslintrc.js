@@ -1,8 +1,24 @@
+const maxParamsRule = {
+  // Set max params to 1 to enforce destructured parameters. Set it to 4 for arrow functions to allow callbacks
+  'func-params-args/func-params': [
+    'error',
+    {
+      global: 1,
+      arrowFuncExpression: 4,
+    },
+  ],
+};
+
 module.exports = {
   configs: {
     recommended: {
       plugins: ['sonarjs'],
-      extends: ['eslint:recommended', 'plugin:sonarjs/recommended', 'prettier'],
+      extends: [
+        'eslint:recommended',
+        'plugin:sonarjs/recommended',
+        'prettier',
+        'func-params-args',
+      ],
       rules: {
         // Other rules
         'arrow-body-style': 'error',
@@ -29,8 +45,7 @@ module.exports = {
         'sort-vars': 'error',
         complexity: 'error',
         curly: 'error',
-        // Set max params to 1 to enforce destructured parameters
-        'max-params': ['warn', 1],
+        ...maxParamsRule,
       },
     },
     typescript: {
