@@ -206,6 +206,7 @@ module.exports = {
         '@typescript-eslint/no-this-alias': 'error',
         '@typescript-eslint/no-throw-literal': 'error',
         '@typescript-eslint/no-unsafe-member-access': 'error',
+        '@typescript-eslint/no-unnecessary-condition': 'error',
         '@typescript-eslint/no-unused-vars': [
           'error',
           { argsIgnorePattern: '^_', ignoreRestSiblings: true },
