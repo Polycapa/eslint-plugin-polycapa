@@ -12,13 +12,8 @@ const maxParamsRule = {
 module.exports = {
   configs: {
     recommended: {
-      plugins: ['sonarjs'],
-      extends: [
-        'eslint:recommended',
-        'plugin:sonarjs/recommended',
-        'prettier',
-        'func-params-args',
-      ],
+      plugins: ['sonarjs', 'func-params-args'],
+      extends: ['eslint:recommended', 'plugin:sonarjs/recommended', 'prettier'],
       rules: {
         // Other rules
         'arrow-body-style': 'error',
