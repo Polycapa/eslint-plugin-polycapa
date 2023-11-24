@@ -208,6 +208,20 @@ module.exports = {
         ],
         '@typescript-eslint/prefer-readonly': 'error',
         '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
+        // See https://typescript-eslint.io/blog/consistent-type-imports-and-exports-why-and-how/ for consistent-type rules
+        '@typescript-eslint/consistent-type-imports': [
+          'error',
+          {
+            fixStyle: 'inline-type-imports',
+          },
+        ],
+        '@typescript-eslint/consistent-type-exports': [
+          'error',
+          {
+            fixMixedExportsWithInlineTypeSpecifier: true,
+          },
+        ],
+        '@typescript-eslint/no-import-type-side-effects': 'error',
         //#endregion
         //#region ESLint rules
         // Rules deactivated due to conflicts with TS
