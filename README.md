@@ -5,7 +5,7 @@ My personal ESLint config for TS and JS projects.
 Run following commands to install peer dependencies:
 
 ```bash
-npm i -D eslint-config-prettier eslint-plugin-sonarjs eslint-plugin-func-params-args
+npm i -D eslint-config-prettier eslint-plugin-sonarjs eslint-plugin-func-params-args @stylistic/eslint-plugin
 ```
 
 Add following to `.npmrc` to be able install the config:

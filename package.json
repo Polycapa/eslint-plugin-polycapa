@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Polycapa/eslint-config-polycapa#readme",
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^1.5.1",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.33.0",
@@ -27,12 +28,13 @@
     "typescript": "^4.9.4"
   },
   "peerDependencies": {
+    "@stylistic/eslint-plugin": "^1.5.1",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-sonarjs": "^0.18.0",
-    "eslint-plugin-func-params-args": "^3.0.1"
+    "eslint-plugin-func-params-args": "^3.0.1",
+    "eslint-plugin-sonarjs": "^0.18.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

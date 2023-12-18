@@ -12,7 +12,7 @@ const maxParamsRule = {
 module.exports = {
   configs: {
     recommended: {
-      plugins: ['sonarjs', 'func-params-args'],
+      plugins: ['sonarjs', 'func-params-args', '@stylistic'],
       extends: ['eslint:recommended', 'plugin:sonarjs/recommended', 'prettier'],
       rules: {
         // Other rules
@@ -40,6 +40,8 @@ module.exports = {
         'sort-vars': 'error',
         complexity: 'error',
         curly: 'error',
+        '@stylistic/lines-around-comment': 'error',
+        '@stylistic/lines-between-class-members': 'error',
         ...maxParamsRule,
       },
     },
