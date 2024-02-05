@@ -42,6 +42,8 @@ module.exports = {
         curly: 'error',
         '@stylistic/lines-around-comment': 'error',
         '@stylistic/lines-between-class-members': 'error',
+        'object-shorthand': 'error',
+        'no-useless-rename': 'error',
         ...maxParamsRule,
       },
     },
